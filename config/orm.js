@@ -13,12 +13,13 @@ var orm = {
     },
 
     insertOne: function (tableInput, col, val, cb) {
-        var queryString = "INSERT INTO " + tableInput + " (" + col + ") VALUES (" + val + ")";
+        var queryString = "INSERT INTO " + tableInput + " (" + col + ") VALUES ('" + val + "')";
+        console.log(queryString);
         connection.query(queryString, function (err, result) {
             if (err) {
                 throw err;
             }
-
+            
             cb(result);
         });
     },

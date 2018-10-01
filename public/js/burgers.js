@@ -4,6 +4,7 @@ $(function() {
       var dev = $(this).data("dev");
   
       var newDev = {
+        id: id,
         devoured: dev
       };
   
@@ -26,9 +27,8 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#ca").val().trim(),
-        devoured: $("[name=devour]:checked").val().trim()
       };
-  
+      console.log(newBurger);
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
