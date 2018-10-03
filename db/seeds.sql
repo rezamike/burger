@@ -1,6 +1,3 @@
-USE burgers_db;
-
-INSERT INTO burgers (burger_name) VALUES ("Nacho Father's Burger");
-INSERT INTO burgers (burger_name) VALUES ("Here's Lookin' at Blue, Cheese");
-INSERT INTO burgers (burger_name) VALUES ("Steak a Fork In It");
-
+INSERT INTO burgers (burger_name, devoured) VALUES ("Nacho Father's Burger", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Here's Lookin' at Blue, Cheese", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Steak a Fork In It", false);
